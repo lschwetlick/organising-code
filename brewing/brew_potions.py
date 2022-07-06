@@ -17,6 +17,21 @@ def make_example_potion(name):
 
 
 def make_python_expert_potion(name):
+    """Cook an expert potion.
+
+    Cook an expert potion according to the recipe provided by the function and
+    let it simmer.
+
+    Parameters
+    ----------
+    name : str
+        Name of the potion to make.
+
+    Returns
+    -------
+    potion_class.Potion
+        Potion.
+    """
     print("I am a Python Expert")
     my_potion = potion_class.Potion(name=name)
     my_potion.add_ingredients(['fish_eyes', 'tea_leaves', 'unicorn_hair'])
