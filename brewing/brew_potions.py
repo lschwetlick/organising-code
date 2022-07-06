@@ -1,11 +1,10 @@
-import potion_class
-import containers
-import cooking
-import inspection
+from brewing import potion_class
+from brewing import containers
+from brewing import cooking
+from brewing import inspection
 
 
 def make_example_potion(name):
-
     print("creating example potion")
     my_potion = potion_class.Potion(name=name)
     # Set up your old kettle and light an eternal flame underneath it.
@@ -17,6 +16,14 @@ def make_example_potion(name):
 
 
 def make_python_expert_potion(name):
+    """ make a potion_class object containing a expert potion per Snape specifications
+
+    Args:
+        name (str): potion name
+
+    Returns:
+        Potion: Potion object containing an expert potion 
+    """
     print("I am a Python Expert")
     # todo: write this function!
     my_potion = potion_class.Potion(name=name)
